@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test1</title>
+	<style>
+		figure{
+			/*float: left;*/
+			/*display:inline-block;*/
+			border: 1px dashed black;
+			/*width:min-content;min-content会解析为容器内部最大的不可断行元素的宽度*/
+			/*max-width: 300px;*/
+			max-width: min-content;
+			margin:auto;
+		}
+		/*figure > img{
+			max-width: inherit;
+		}*/
+		/*figcaption{
+			float: left;
+		}*/
+
+
+	</style>
+</head>
+<body>
+	<p>Some text [...]The great Sir Adam Catlace was named after Countess Ada Lovelace, the first programmer.</p>
+	<!-- 目标：使figure元素和它所包含的图片一样宽 -->
+	<figure>
+		<img src="img/photo01.jpg" />
+		<figcaption>
+			The great Sir Adam Catlace was named after Countess Ada Lovelace, the first programmer.
+			The great Sir Adam Catlace was named after Countess Ada Lovelace, the first programmer.
+			
+		</figcaption>
+	</figure>
+	<p>More text [...]The great Sir Adam Catlace was named after Countess Ada Lovelace, the first programmer.</p>
+</body>
+</html>
+
+<!-- play.csssecrets.io/table-column-widths -->
