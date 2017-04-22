@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /*三列宽度都固定*/
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .wrapper {
+      overflow: hidden;
+      padding-left: 300px;
+      padding-right: 250px;
+      /*wrapper的最小宽度是left+right+main的最小宽度 = 300 + 250 + 300 = 850px*/
+      /* padding-left + padding-right + min-width = 350 + 250 + 300 = 850*/
+      min-width: 300px;   
+    }
+    
+    .left {
+      width: 300px;
+      height: 500px;
+      background: paleturquoise;
+      float: left;
+      margin-left: -100%;
+      position: relative;
+      left: -300px;
+    }
+    .right{
+      width: 250px;
+      height: 500px;
+      background: greenyellow;
+      float: left;
+      margin-left: -250px;
+      position: relative;
+      right: -250px;
+    }
+    
+    .main {
+      width: 100%;
+      height: 500px;
+      background: #cccccc;
+      float: left;
+      /*main的最小宽度是left的宽度*/
+      min-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="main">main</div>
+    <div class="left">left</div>
+    <div class="right">right</div>
+  </div>
+</body>
+
+</html>

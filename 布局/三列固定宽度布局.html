@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /*三列宽度都固定*/
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .wrapper {
+      overflow: hidden;
+      width: 920px;
+      margin: auto;
+      outline: 1px solid red;
+    }
+    
+    .left {
+      width: 230px;
+      height: 500px;
+      background: paleturquoise;
+      float: left;
+    }
+    
+    .main {
+      width: 670px;
+      height: 500px;
+      /*padding-right: 20px;*/
+      /*background: #cccccc;*/
+      float: right;
+    }
+
+    .main > .inner-main{
+      float: left;
+      width: 400px;
+      height: 500px;
+      background: pink;
+    }
+
+    .main > .inner-right {
+      float: right;
+      width: 230px;
+      height: 500px;
+      background: yellowgreen;
+      padding-right: 20px;
+    }
+  </style>
+</head>
+<!--main向右浮动， left向左浮动， main里面的inner-main向左浮动，inner-right向右浮动-->
+<body>
+  <div class="wrapper">
+    <div class="main">
+      <div class="inner-main"></div>
+      <div class="inner-right"></div>
+    </div>
+    <div class="left"></div>
+  </div>
+</body>
+
+</html>

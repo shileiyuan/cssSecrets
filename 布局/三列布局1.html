@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /*左右两列固定，中间自适应*/
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .wrapper{
+      overflow: hidden;
+    }
+    .left{
+      width: 200px;
+      height: 500px;
+      background: paleturquoise;
+      float: left;
+    }
+    .right{
+      width: 150px;
+      height: 500px;
+      background: yellowgreen;
+      float: right;
+    }
+    .main{
+      /*width: auto;*/  /* 可以不写但不能是100%*/
+      margin-left: 200px;
+      margin-right: 150px;
+      height: 500px;
+      background: #cccccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="main"></div>
+  </div>
+</body>
+</html>
